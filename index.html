@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0b3f895067.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+
+  <section  id="landing">
+    <div class="nav-bar">
+        <div class="logo">
+          <img src="light.svg" alt="">
+        </div>
+        <div class="links">
+          <a href="loan.html">Apply for loan</a>
+          <a href="invest.html">Invest</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          
+        </div>
+        
+        <div class="icon-btn">
+          <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+        </div>
+
+        <div class="dropdown">
+          <i class="close-btn fa-solid fa-xmark fa-2xl" style="color: #0a0a0a;"></i>
+          <li><a href="loan.html">Apply For loans</a></li>
+          <li><a href="invest.html">Invest</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </div>
+    </div>
+    <div class="first-container">
+        <div class="landing-text">
+            <h1>The only money lending app you need.</h1>
+            <p>Join users who get cash fast, build their credit, and save smarter with Easy lend. It only takes 2 minutes to sign up. No credit check required.</p>
+            <div class="start-button">
+                <h2><a href="">Get Started</a></h2>
+            </div>
+        </div>
+        <div class="mockup">
+          <div class="vector">
+            <img src="Vector 3.svg" alt="Vector Image">
+          </div>
+          <div class="phone">
+            <img src="iPhone 15.png" alt="Phone Image">
+          </div>
+        </div>
+        
+    </div>
+  </section>  
+
+
+
+  <section class="reveal-section" id="second">
+    <div class="second-container">
+        <div class="second-text">
+            <h1 class="hidden-text">Now you can access loans faster and easier.</h1>
+            <h3 class="hidden-text">No overdraft. No minimum balance. No monthly fees. No foreign transaction fees. 60,000+ fee-free</h3>
+            <h3 class="hidden-text">Easylend is a financial technology company, not a bank.</h3>
+        </div>
+        <div class="ill-1">
+          <img src="Plain credit card-rafiki.svg" alt="">
+        </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section id="third">
+    <div class="third-title">
+      <h1>Steps to Apply for a Loan</h1>
+
+    </div>
+    <div class="third-container">
+        <div class="procedure">
+          <div class="ill-2">
+            <img src="Group 16.svg" alt="">
+          </div>
+          <div class="steps-container">
+           <div class="steps">
+            <h3>Online application</h3>
+            <p>Provide a few basic details to initiate the loan application</p>
+           </div>
+           <div class="steps">
+            <h3>Verification</h3>
+            <p>Upload  the necessary documents and complete registration</p>
+           </div>
+           <div class="steps">
+            <h3>Complete your profile</h3>
+            <p>Provide a few basic details to initiate the loan application</p>
+           </div>
+          </div>
+        </div>
+        
+        <div class="ill-4">
+          <img src="E-Wallet-bro.svg" alt="">
+        </div>
+        
+    </div>
+  </section>
+
+
+
+  <section class="reveal-section" id="fourth">
+    <div class="fourth-container">
+        
+        <div class="f-4">
+            <h2 class=" hidden-text">INVESTING.</h2>
+            <h1 class="hidden-text">Invest your money your way.</h1>
+            <h3 class="hidden-text">Whether you’re a first time investor or full-fledged financier, invest on repeat or get a personalized portfolio managed by experts.</h3>
+            <div class="strt-here">
+               <p class="liine-text">START HERE ></p>
+            </div>
+        </div>
+        <div class="ill-3 bouncing-animation" >
+          <img src="Credit assesment-amico.svg" alt="">
+        </div>
+    </div>
+  </section>
+
+  <section id="last-last">
+    <div class="last">
+      <h1>Your money deserves this.</h1>
+      <div class="st-button">
+        <h2><a href="loan.html">Get Started</a></h2>
+    </div>
+      
+    </div>
+  </section>
+
+
+
+  
+  <footer>
+    <div class="footer-container">
+      <div class="row">
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="booking.html">Appointment</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="">Blog</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Book consultation</a></li>
+            <li><a href="#">Visit us</a></li>
+          </ul>
+        </div>
+        
+      </div>
+     
+    </div>
+    
+    
+  </footer>
+  <script>
+ document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", revealText);
+  revealText(); // Call on page load as well
+});
+
+function revealText() {
+  const texts = document.querySelectorAll(".hidden-text");
+
+  texts.forEach((text) => {
+    const textTop = text.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    const triggerAt = 150; // Adjust this value based on your layout
+
+    if (textTop < windowHeight - triggerAt) {
+      text.classList.add("visible");
+    } else {
+      text.classList.remove("visible");
+    }
+  });
+}
+
+
+
+
+
+
+const iconBtn = document.querySelector('.icon-btn');
+const dropdown = document.querySelector('.dropdown');
+
+iconBtn.addEventListener('click', () => {
+  dropdown.classList.toggle('show');
+});
+
+const closeBtn = document.querySelector('.close-btn');
+
+closeBtn.addEventListener('click', () => {
+    dropdown.classList.remove('show');
+});
+
+
+
+
+  </script>
+</body>
+</html>

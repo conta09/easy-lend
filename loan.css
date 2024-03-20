@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Rethink+Sans:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+.nav-bar{
+  display: flex;
+  color: white;
+
+  justify-content: center;
+}
+  .logo{
+    margin-right:auto;
+    margin-left: 80px;
+
+  }
+  .logo img{
+    margin-top: 20px;
+    width: 200px;
+    height: 200;
+  }
+  .links{
+    font-size: 1.2rem;
+    margin: 5px 0;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  .nav-bar a {
+    margin: 10px;
+    padding: 20px 10px;
+    font-size: 1rem;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .links a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: black; /* You can change the color to your preference */
+    transition: width 0.3s ease;
+  }
+  
+  .links a:hover::after {
+    width: 100%;
+  }
+  
+  .dropdown{
+    display: none;
+    position: absolute;
+    background-color: white;
+    right:0;
+    top: 0;
+    width: 100%;
+    height: 100%;  
+    padding-top: 30px;
+  
+  }
+  .nav-bar .icon-btn{
+    cursor: pointer;
+    display: none;
+  }
+  .icon-btn{
+    padding: 15px;
+    margin: 20px;
+  
+  }
+  .dropdown i{
+  margin: 20px;
+  }
+  .dropdown li{
+    margin: 10px;
+    margin-top: 30px;
+    text-align: center;
+    
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+  
+  }
+  .dropdown a{
+    color: black;
+    margin: 10px;
+    padding: 20px 10px;
+    font-size: 1.6rem;
+  }
+  
+  .dropdown a:hover{
+    color: rgb(149, 45, 45);
+  }
+
+  @media screen and (max-width: 992px) {
+    .nav-bar{
+      background-color: ;
+    }
+    .nav-bar .links a{
+     display: none;
+  
+  
+    }
+    .logo{
+      margin-right:auto;
+      margin-left: 40px;
+  
+    }
+    .logo img{
+      margin-top: 20px;
+      width: 160px;
+      height: 200;
+    }
+    .nav-bar .join-button h1{
+      display: none;
+    }
+    .nav-bar .icon-btn{
+      display: block;
+    }
+    .dropdown.show {
+      display: block;
+    }
+    .nav-bar.dropdown-open:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  }
+    .dropdown{
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ab-1{
+    background-color: #F7FDFE;
+}
+.loan-container{
+    display: flex;
+  padding: 30px 5px;
+  margin-top: 10px;
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.loan-text{
+    width: 35%;
+    padding: 10px 0px;
+    margin: 10px;
+  
+  }
+  .loan-text h1{
+  font-size: 2.9rem;
+  font-weight: 600;
+  }
+  .loan-text h3{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 300;
+  
+  }
+.loan-ill{
+    width: 50%; 
+    text-align: center;
+
+  }
+  .loan-ill img{
+    width: 430px;
+    height: 410px;
+    margin: 10px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .loan-container{
+      flex-direction: column;
+    }
+    .loan-text{
+      width: 90%;
+      padding: 10px 0px;
+      margin: 10px;
+    
+    }
+    .loan-ill{
+      width: 90%; 
+      text-align: center;
+  
+    }
+    .loan-ill img{
+      width: 400px;
+      height: 370px;
+      margin: 10px;
+    }
+    .loan-text h1{
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      padding: 10px 0;
+      }
+      .loan-text h3{
+        color: black;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 300;
+        padding-bottom: 10px;
+      
+      }
+  }
+
+
+
+
+
+  
+
+
+
+ 
+
+  #third{
+    background-color: #F7F7F7;
+    }
+    .third-title{
+      text-align: center;
+      font-size: 1.7rem;
+      padding: 10px;
+    
+    }
+    .third-container{
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+    }
+    .procedure{
+      display: flex;
+    }
+    .ill-2{
+      width: 20%; 
+    text-align: center; 
+    }
+    .ill-2 img{
+      height: 390px;
+      margin: 10px;
+    }
+    .ill-4{
+      width: 50%; 
+    text-align: center; 
+    }
+    .ill-4 img{
+      height: 410px;
+      margin: 10px;
+    }
+    
+    
+    
+    
+    
+    
+    .steps-container{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+    .steps{
+      width: 70%;
+    }
+    .steps h3{
+    font-size: 1rem;
+    }
+    
+    .steps p{
+      font-size: 0.7rem;
+    }
+    @media screen and (max-width: 992px){
+      .third-title{
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 10px;
+      
+      }
+      .third-container{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+      }
+      
+      
+      .ill-4{
+      text-align: center; 
+      }
+      .ill-4 img{
+        height: 310px;
+      }
+      
+     
+     
+    
+    
+    }
+    
+    
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+    
+
+
+.package{
+  padding: 30px;
+  margin: 30px;
+}
+
+.package-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+.package-text h1{
+  padding: 10px;
+  font-size: 2.2rem;
+ margin: 10px 0;
+
+}
+
+
+.loan-table{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: black;
+  width: 400px;
+  margin-left: 80px;
+}
+
+.loan-header{
+  text-align: left;
+  margin: 15px;
+  color: white;
+}
+.loan-header h3{
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+.loan-header h5{
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 5px 0;
+  color: rgb(223, 221, 221);
+
+}
+.loan-application{
+  width: 30%;
+  margin-left: 30px;
+}
+.loan-application h1{
+margin: 15px 0;
+}
+.loan-application p{
+  font-weight: 400;
+  color: rgb(98, 93, 93);
+}
+.strt-here{
+  margin: 20px 0;
+
+}
+.strt-here a{
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+
+.liine-text {
+  position: relative;
+}
+
+.liine-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 27px; /* Adjust the distance as needed */
+
+  width: 100%;
+  height: 3px; /* Adjust the height as needed */
+  background-color: #49C6B4; /* Adjust the color as needed */
+}
+
+@media screen and (max-width: 992px){
+  .package-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-right: 30px;
+  }
+  .loan-table{
+   
+  }
+  .loan-application{
+    width: 90%;
+    margin-left: 30px;
+  }
+  
+ 
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

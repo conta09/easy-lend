@@ -1,0 +1,22 @@
+<!-- submission.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Details</title>
+</head>
+<body>
+    <h1>Form Submission Details</h1>
+
+    <script>
+        // Retrieve form submission details from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const formDataString = urlParams.get('data');
+        const formData = JSON.parse(decodeURIComponent(formDataString));
+
+        // Display the details on the page
+        document.write('<pre>' + JSON.stringify(formData, null, 2) + '</pre>');
+    </script>
+</body>
+</html>

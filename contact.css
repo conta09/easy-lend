@@ -1,0 +1,92 @@
+#first-contact{
+background-color: black;
+}
+.title{
+    font-size: 2.1rem;
+    padding: 10px 0;
+}
+.c-container{
+    display: flex;
+    align-items: center;
+    padding: 30px 10px;
+    padding-bottom: 40px;
+    gap: 20px;
+}
+.contact-text{
+    color: white;
+    width: 30%;
+    padding-top: 40px;
+    margin-left: 100px;
+}
+.contact-text h1{
+    font-size: 2.5rem;
+    font-weight: 550;
+
+}
+.contact-text h3{
+    font-size: 1.3rem;
+
+}
+.contact-text p{
+    font-size: 1rem;
+
+}
+
+.aside{
+    background-color: white;
+    border-radius: 15px;
+    width: 37%;
+    position: relative;
+    left: 100px;
+    top: 180px;
+    bottom: 0;
+    margin: 20px 5px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.aside p{
+    padding-left: 15px;
+    width: 80%;
+
+}
+.long{
+  display: flex;  
+  justify-content: center;
+  gap: 10px;
+}
+.long h3{
+    width:27% ;
+    font-size: 1rem;   
+}
+
+
+
+
+
+
+#sec-cont{
+    height: 40vh;
+}
+
+
+/*responsive phone*/
+
+@media(min-width:375px)and (max-width:667px){
+    .c-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-text{
+        width: 80%;
+        text-align: left;
+    }
+    .aside{
+        width: 80%;
+        left: 10px;
+        margin: 5px 0; /* Center the element horizontally */
+    }
+    #sec-cont{
+    }
+}
